@@ -1,9 +1,9 @@
 ---
-layout: noheader
+layout: default
 ---
 
 ## Welcome to another page
 
-_yay_ 
+_yay_
 
 [back](./)
