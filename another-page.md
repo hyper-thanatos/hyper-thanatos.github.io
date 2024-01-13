@@ -4,6 +4,6 @@ layout: noheader
 
 ## Welcome to another page
 
-_yay_
+_yay_ 
 
 [back](./)
