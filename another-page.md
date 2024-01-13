@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: noheader
 ---
 
 ## Welcome to another page
