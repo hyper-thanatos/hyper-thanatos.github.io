@@ -7,9 +7,8 @@
   --max: 980px;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial;
   color: var(--fg);
   line-height: 1.6;
   background: #fff;
@@ -20,7 +19,6 @@ header { margin-bottom: 24px; }
   font-size: clamp(18px, 2.6vw, 22px);
   font-weight: 600;
   letter-spacing: .2px;
-  display: inline-block;
 }
 .brand small {
   font-weight: 500;
@@ -35,7 +33,6 @@ nav {
   font-size: 15px;
 }
 .menu { display: grid; gap: 10px; }
-.group { display: block; }
 .group > .title {
   font-weight: 600;
   margin-right: 8px;
@@ -51,7 +48,10 @@ a {
 }
 a:hover { opacity: .75; }
 main { margin-top: 20px; }
-.blurb { font-size: clamp(18px, 2.2vw, 20px); max-width: 60ch; }
+.blurb {
+  font-size: clamp(18px, 2.2vw, 20px);
+  max-width: 60ch;
+}
 .cta {
   display: inline-block;
   margin-top: 18px;

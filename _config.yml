@@ -6,7 +6,7 @@ ruby gem "github-pages", group: :jekyll_plugins
 
 title: hyper thanatos
 logo: /assets/img/logo.png
-description: Athanasios Anagnostopoulos writes and creates moving images and staged situations about memory and doubt.
+description: Athanasios Anagnostopoulos is a writer, print and digital publishing editor and digital marketing specialist.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
