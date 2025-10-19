@@ -3,7 +3,7 @@ layout: default
 title: Digital Marketing Strategy
 ---
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
 <div class="wrap">
   <header>
