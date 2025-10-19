@@ -82,7 +82,6 @@ title: Digital Marketing Strategy
   </main>
 
   <footer>
-    <div>website by <a href="https://dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a></div>
     <div>All rights reserved © Athanasios Anagnostopoulos 2025</div>
   </footer>
 </div>
