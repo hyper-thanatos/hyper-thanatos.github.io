@@ -5,13 +5,12 @@ title: Digital Marketing Strategy
 
 <link rel="stylesheet" href="assets/css/style.css">
 
-<div class="wrap">
-  <header>
-    <div class="brand">athanasios <small>Anagnostopoulos Artist | Writer</small></div>
-  </header>
+<div class="custom-layout">
+  <!-- LEFT SIDEBAR: header + nav -->
+  <aside class="custom-sidebar">
+    <div class="brand">athanasios <small>Anagnostopoulos — Artist | Writer</small></div>
 
-  <nav>
-    <div class="menu">
+    <nav class="custom-nav">
       <div class="group"><span class="title">.about</span></div>
 
       <div class="group">
@@ -66,22 +65,26 @@ title: Digital Marketing Strategy
 
       <div class="group"><a class="title" href="/contact.html">.contact</a></div>
       <div class="group"><a class="title" href="/bio.html">.bio</a></div>
-    </div>
-  </nav>
+    </nav>
+  </aside>
 
-  <main>
-    <p class="blurb">
-      athanasios.co is a brand for digital and print publishing, online marketing,
-      strategy, and Search Engine Optimisation (SEO).
-    </p>
-    <p class="blurb">
-      athanasios is co-founder of
-      <a href="https://www.dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a>.
-    </p>
-    <a class="cta" href="/contact.html">Get in touch</a>
-  </main>
+  <!-- RIGHT: main content -->
+  <section class="custom-content">
+    <main>
+      <p class="blurb">
+        athanasios.co is a brand for digital and print publishing, online marketing,
+        strategy, and Search Engine Optimisation (SEO).
+      </p>
+      <p class="blurb">
+        athanasios is co-founder of
+        <a href="https://www.dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a>.
+      </p>
+      <a class="cta" href="/contact.html">Get in touch</a>
+    </main>
 
-  <footer>
-    <div>All rights reserved © Athanasios Anagnostopoulos 2025</div>
-  </footer>
+    <footer>
+      <div>website by <a href="https://dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a></div>
+      <div>All rights reserved © Athanasios Anagnostopoulos 2025</div>
+    </footer>
+  </section>
 </div>
