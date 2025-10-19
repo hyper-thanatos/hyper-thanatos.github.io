@@ -2,7 +2,6 @@
 layout: none
 ---
 
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -15,6 +14,20 @@ layout: none
     <header>
       <div class="brand">athanasios <small>Anagnostopoulos Artist | Writer</small></div>
     </header>
+
+
+
+    <main>
+      <p class="blurb">
+        athanasios.co is a brand for digital and print publishing, online marketing,
+        strategy, and Search Engine Optimisation (SEO).
+      </p>
+      <p class="blurb">
+        athanasios is co-founder of
+        <a href="https://www.dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a>.
+      </p>
+      <a class="cta" href="/contact.html">Get in touch</a>
+    </main>
 
     <nav>
       <div class="menu">
@@ -74,18 +87,6 @@ layout: none
         <div class="group"><a class="title" href="/bio.html">.bio</a></div>
       </div>
     </nav>
-
-    <main>
-      <p class="blurb">
-        athanasios.co is a brand for digital and print publishing, online marketing,
-        strategy, and Search Engine Optimisation (SEO).
-      </p>
-      <p class="blurb">
-        athanasios is co-founder of
-        <a href="https://www.dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a>.
-      </p>
-      <a class="cta" href="/contact.html">Get in touch</a>
-    </main>
 
     <footer>
       <div>website by <a href="https://dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a></div>
