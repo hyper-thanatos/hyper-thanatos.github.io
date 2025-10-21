@@ -12,10 +12,28 @@ title: Digital Marketing Strategy
             border-radius: 50%/100px 100px 0 0;
             ">
 </div>
-<p class="blurb" style="font-size:45px !important;">athanasios.co</p>
+<h1 class="blurb">athanasios.co</h1>
 
-<p class="blurb" style="font-size:25px !important;" > is a brand for <u>digital publishing</u>, <u>online marketing strategy</u>, <u>Search Engine Optimisation (SEO)</u> and <u>AI Optimisation</u>/ <u>Generative Engine Optimisation (GEO)</u>.</p>
+<p class="blurb"> is a brand for <u>digital publishing</u>, <u>online marketing strategy</u>, <u>Search Engine Optimisation (SEO)</u> and <u>AI Optimisation</u>/ <u>Generative Engine Optimisation (GEO)</u>.</p>
+<br>
+<!-- Single image
+<img src="/assets/images/shot1.jpg" alt="Studio desk" data-lightbox loading="lazy">
+-->
 
-<p class="blurb" style="font-size:25px !important;">Athanasios is co-founder of</p><p style=""><a style="color: #0033ff !important; font-size:45px !important;" href="https://www.dathprojects.com" target="_blank" rel="noopener">dathprojects.com</a></p>
+<!-- Gallery (same group name)
+<img src="/assets/images/work1.jpg" alt="Draft 1" data-lightbox data-lb-group="work">
+<img src="/assets/images/work2.jpg" alt="Draft 2" data-lightbox data-lb-group="work">
+<img src="/assets/images/work3.jpg" alt="Draft 3" data-lightbox data-lb-group="work">
+-->
 
-<p style=""><a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Get in touch</a></p>
+<h3>Your online presence</h3>
+<p>is your audience's first or second impression of you, it's your unique voice and the version of the world you have created.</p>
+<h3>Your online voice defines you.</h3>
+<p>Your website, your socials, your copy and your image, all make up your unique online ambassador. Your ambassador is the most truthful representative of your project, your organisation, your singular or plural self behind it all.</p>
+<p>Find out how your online ambassador can be your most passionate advocate.</p>
+<h3 style="">
+  <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Get in touch</a>
+  </h3>
+<br>
+<div class="home-section-highlight"><h3 class="blurb">athanasios is co-founder of</h3><h2 style=""><a href="https://www.dathprojects.com" target="_blank" rel="noopener"> dathprojects.com</a></h2>
+</div>

@@ -1,3 +1,12 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color, #111);
+}
 /* === Frame the page as a 2-column grid === */
 .wrapper {
   max-width: 1440px;
@@ -26,6 +35,7 @@
   padding: 0;
   /*border-left: 1px solid #e7e7e7; /* optional visual divider */
   padding-left: 40px;     /* match gutter */
+  padding-right: 80px;
 }
 /* RIGHT column (footer, below content) */
 .wrapper > footer.site-foot {
@@ -39,30 +49,99 @@
   font-size: 15px;
 }
 
-/* Typography / nav (keep or tweak as you like) */
-:root { --fg:#111; --muted:#555; --link:#111; --link-underline:rgba(0,0,0,.25); --border:#e7e7e7; }
-body { color:var(--fg); line-height:1.6; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial; }
-a   { color:var(--link); text-decoration:none; border-bottom:1px solid var(--link-underline); }
-a:hover { opacity:.75; }
-
-.brand { font-size:clamp(18px,2.6vw,22px); font-weight:600; letter-spacing:.2px; }
-.brand small { font-weight:500; color:var(--muted); display:block; margin-top:2px; }
+/* === Custom Navigation Typography — All Source Serif 4 === */
 
 .custom-nav {
-  border-top:1px solid var(--border);
-  /*border-bottom:1px solid var(--border);*/
-  padding:12px 0;
-  margin:12px 0 28px;
-  font-size:15px;
+  font-family: "Source Serif 4", Georgia, serif;
+  color: var(--text-color);
 }
-.custom-nav .group { margin-bottom:12px; }
-.custom-nav .title { font-weight:600; white-space:nowrap; display:inline-block; margin-right:8px; }
-.custom-nav .items { display:block; margin-top:6px; }
-.custom-nav .items a { display:inline-block; margin-right:14px; }
+
+/* Group titles (e.g. ".clients", ".a bit of me") */
+.custom-nav .title {
+  font-weight: 600;
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  margin-bottom: var(--space-xs);
+}
+
+/* Navigation links (items) */
+.custom-nav .items a {
+  display: inline-block;
+  font-family: inherit;       /* inherits Source Serif 4 */
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  line-height: 1.4;
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  margin-right: var(--space-sm);
+  padding: var(--space-2xs) 0;
+}
+
+/* Hover & focus state */
+.custom-nav .items a:hover,
+.custom-nav .items a:focus {
+  color: var(--color-accent, #0a66c2);
+  border-bottom-color: rgba(10,102,194,.25);
+}
+
+/* Group spacing */
+.custom-nav .group {
+  margin-bottom: var(--space-md);
+}
+
+/* Optional: slightly lighten secondary links */
+.custom-nav .items a:not(:hover) {
+  color: rgba(0,0,0,0.85);
+}
 
 /* Content niceties */
-.blurb { font-size:clamp(18px,2.2vw,20px); max-width:60ch; }
-.cta   { display:inline-block; margin-top:18px; padding:10px 14px; border-radius:999px; border:1px solid var(--fg); border-bottom:none; }
+.blurb { font-size:revert; }
+/* === CTA Buttons / Links === */
+.cta {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: 10px 18px;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+
+  border: 1px solid var(--color-text);
+  border-bottom: none; /* your original subtle asymmetry */
+  border-radius: 999px; /* pill shape */
+
+  transition: all 0.2s ease;
+}
+
+/* Hover: subtle shift + opacity for tactile feel */
+.cta:hover {
+  opacity: 0.75;
+  transform: translateY(-1px);
+}
+
+/* Optional: accent color variant */
+.cta--accent {
+  border-color: var(--color-accent, #0a66c2);
+  color: var(--color-accent, #0a66c2);
+}
+
+.cta--accent:hover {
+  color: #004182;
+  border-color: #004182;
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+}
 
 /* Mobile: stack vertically */
 @media (max-width: 720px) {
@@ -88,4 +167,530 @@ a:hover { opacity:.75; }
 
 .social-linkedin i {
   font-size: 16px;
+}
+
+.home-section-highlight {
+  padding-top: 10px;
+  border:solid 4px #000;
+  border-color:#000 #000 transparent transparent;
+  border-radius: 120% 15% / 2% 60%;
+}
+.home-section-highlight h2, h3 {display: inline; padding: 10px;}
+
+
+/* Make the badge behave like a flexible pill that can wrap */
+.home-section-highlight{
+  display: inline-block;       /* shrink to content but allow wrapping */
+  max-width: 100%;             /* don't overflow the viewport */
+  box-sizing: border-box;      /* include border in width calc */
+  padding: 8px 12px;           /* ensures border has breathing room on wrap */
+}
+
+/* Keep headings tidy inside; no extra padding that can fight the border */
+.home-section-highlight h2,
+.home-section-highlight h3{
+  display: inline;             /* fine to keep inline */
+  margin: 0;
+  padding: 0;                  /* remove the inner padding you had */
+}
+
+/* Let long URLs break nicely on small screens */
+.home-section-highlight a{
+  text-decoration: none;
+  border-bottom: 1px solid currentColor; /* optional, matches your style */
+  overflow-wrap: anywhere;     /* modern, best-looking wrap */
+  word-break: break-word;      /* fallback for older browsers */
+}
+
+/* Optional: slightly smaller h2 inside the badge on phones */
+@media (max-width: 480px){
+  .home-section-highlight h2{
+    font-size: clamp(1.2rem, 6vw, 1.6rem);
+    line-height: 1.15;
+  }
+}
+
+/* === Modern Typography System === */
+
+/* Root scale — makes text sizes adapt to screen size */
+:root {
+  --font-base: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-accent: "Source Serif 4", Georgia, serif;
+  --color-text: #1a1a1a;
+  --color-accent: #0033ff;
+  --line-height-base: 1.6;
+  --max-width-text: 680px;
+}
+
+/* Global text styles */
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  line-height: var(--line-height-base);
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-accent);
+  color: var(--color-text);
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  max-width: var(--max-width-text);
+}
+
+/* Hierarchical font sizes (fluid between mobile & desktop) */
+h1 { font-size: clamp(2.6rem, 6vw, 4rem); }
+h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
+h3 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
+h4 { font-size: 1.3rem; font-weight: 500; }
+h5 { font-size: 1.05rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+h6 { font-size: 0.9rem; color: #666; }
+
+/* Paragraphs & links */
+p {
+  max-width: var(--max-width-text);
+  margin-bottom: 1.25em;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #004182;
+  text-decoration: underline;
+}
+
+
+/* === Responsive Spacing & Rhythm === */
+
+/* Scale + tokens */
+:root{
+  --space-2xs: clamp(6px, 0.6vw, 8px);
+  --space-xs:  clamp(8px, 0.9vw, 12px);
+  --space-sm:  clamp(12px,1.2vw, 16px);
+  --space-md:  clamp(16px,1.8vw, 24px);
+  --space-lg:  clamp(24px,2.6vw, 36px);
+  --space-xl:  clamp(32px,4vw, 56px);
+  --content-max: 720px; /* readable line length */
+}
+
+/* Page wrapper padding (top/right/bottom/left) */
+.wrapper{
+  padding: var(--space-lg) var(--space-md) calc(var(--space-xl) + 20px);
+  gap: var(--space-lg);
+}
+
+/* Sidebar + content grid gap (if you use column-gap elsewhere, this wins) */
+.wrapper{
+  column-gap: var(--space-lg) !important;
+}
+
+/* Content width and breathing room */
+section{
+  max-width: var(--content-max);
+  padding-bottom: var(--space-xl);
+}
+
+/* Headings: responsive margins (works with the typography you added) */
+h1,h2,h3,h4,h5,h6{
+  margin-top: clamp(1.25rem, 3vw, 2.5rem);
+  margin-bottom: clamp(0.5rem, 1.2vw, 1rem);
+}
+
+/* Paragraphs & lists rhythm */
+p,
+ul,ol,
+blockquote,
+pre,code,
+table{
+  margin-bottom: var(--space-md);
+}
+ul,ol{ padding-left: 1.25em; }
+
+/* Navigation groups/items spacing */
+.custom-nav .group{
+  margin-bottom: var(--space-md);
+}
+.custom-nav .items a{
+  display: block;
+  padding: var(--space-2xs) 0;
+}
+
+/* Footer spacing */
+.site-foot{
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+
+/* Sticky sidebar safety on short screens */
+header{
+  padding-bottom: var(--space-md);
+}
+
+
+
+
+/* ===== Breakpoints ===== */
+
+/* ≤ 1024px: ease gaps a bit */
+@media (max-width: 1024px){
+  .wrapper{ column-gap: var(--space-md) !important; }
+}
+
+/* ≤ 800px: collapse to single column layout if desired */
+@media (max-width: 800px){
+  .wrapper{
+    display: block; /* collapses your grid to a vertical flow */
+    padding: var(--space-md);
+  }
+  header{
+    position: static;  /* disable sticky to avoid overlap */
+    margin-bottom: var(--space-lg);
+  }
+  section{
+    max-width: 100%;
+  }
+}
+
+/* ≤ 480px: tighter rhythm */
+@media (max-width: 480px){
+  h1{ margin-top: var(--space-lg); }
+  .site-foot{ margin-top: var(--space-lg); }
+}
+
+/* Motion-reduction friendly spacing transitions */
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; }
+}
+
+/* === Responsive Media === */
+
+/* Generic responsive images */
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;         /* preserve aspect ratio */
+}
+
+/* Figures + captions */
+figure{
+  margin: var(--space-md) 0;
+}
+figcaption{
+  margin-top: var(--space-2xs);
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Videos: fluid width, maintain height automatically */
+video{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Embeds (YouTube, Vimeo, Maps, etc.) – aspect-ratio wrapper */
+.embed {
+  position: relative;
+  width: 100%;
+  /* 16:9 by default; override per-instance with an inline style if needed */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;      /* avoids white flash before load */
+  border-radius: 12px;   /* optional: matches your rounded vibe */
+}
+
+.embed > iframe,
+.embed > video,
+.embed > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Optional: soft media corners + subtle shadow for images */
+.media-rounded img,
+.media-rounded video{
+  border-radius: 12px;
+}
+.media-shadow img,
+.media-shadow video{
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+}
+
+/* Responsive gallery utility */
+.media-grid{
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(12, 1fr);
+}
+.media-grid > *{
+  grid-column: span 12;           /* 1 per row on mobile */
+}
+@media (min-width: 700px){
+  .media-grid > *{ grid-column: span 6; }  /* 2-up */
+}
+@media (min-width: 1100px){
+  .media-grid > *{ grid-column: span 4; }  /* 3-up */
+}
+
+/* Prevent content from bleeding edge-to-edge inside main text */
+.prose img,
+.prose video,
+.prose figure{
+  max-width: 100%;
+}
+
+/* Nice loading behavior */
+img[loading="lazy"]{
+  filter: blur(0.001px); /* nudges Safari to decode smoothly */
+}
+
+/* Respect reduced motion for autoplaying videos */
+@media (prefers-reduced-motion: reduce){
+  video[autoplay]{
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* === Lightbox (no deps) === */
+:root{
+  --lb-backdrop: rgba(0,0,0,.82);
+  --lb-ui: rgba(255,255,255,.9);
+  --lb-ui-hover: #fff;
+  --lb-radius: 14px;
+  --lb-gap: 14px;
+}
+
+.lb-backdrop{
+  position: fixed; inset: 0; z-index: 9999;
+  display: none; /* toggled by .is-open */
+  background: var(--lb-backdrop);
+  backdrop-filter: blur(2px);
+}
+.lb-backdrop.is-open{ display: grid; place-items: center; }
+
+.lb-stage{
+  position: relative;
+  width: min(92vw, 1200px);
+  height: min(90vh, 92svh);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: var(--lb-gap);
+  padding: var(--lb-gap);
+  box-sizing: border-box;
+}
+
+.lb-imgwrap{
+  position: relative;
+  width: 100%; height: 100%;
+  background: #000;
+  border-radius: var(--lb-radius);
+  overflow: hidden;
+  display: grid; place-items: center;
+}
+
+.lb-img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 0;
+}
+
+.lb-caption{
+  color: #eee;
+  font-size: .95rem;
+  line-height: 1.45;
+  text-align: center;
+  max-width: 85ch;
+  margin: 0 auto;
+  padding: 2px 8px;
+}
+
+.lb-btn{
+  position: absolute;
+  top: 10px;
+  display: grid; place-items: center;
+  width: 40px; height: 40px;
+  border-radius: 999px;
+  background: var(--lb-ui);
+  color: #000;
+  border: none; cursor: pointer;
+  transition: background .2s ease, transform .06s ease;
+}
+.lb-btn:hover{ background: var(--lb-ui-hover); }
+.lb-btn:active{ transform: scale(.98); }
+
+.lb-close{ right: 10px; }
+.lb-prev, .lb-next{
+  top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px;
+}
+.lb-prev{ left: 12px; }
+.lb-next{ right: 12px; }
+
+.lb-icon{ font: 16px/1 system-ui, -apple-system, Segoe UI, Arial; }
+.lb-icon::before{ display: block; }
+
+/* icons via CSS (no images) */
+.lb-close .lb-icon::before{ content: "✕"; font-size: 18px; }
+.lb-prev  .lb-icon::before{ content: "‹"; font-size: 28px; }
+.lb-next  .lb-icon::before{ content: "›"; font-size: 28px; }
+
+/* Hide arrows when not in a group of >1 */
+.lb-btn[disabled]{ opacity: .35; pointer-events: none; }
+
+@media (max-width: 740px){
+  .lb-stage{ width: 96vw; height: 92svh; padding: 10px; gap: 10px; }
+  .lb-prev, .lb-next{ width: 40px; height: 40px; }
+  .lb-caption{ font-size: .9rem; padding: 0 6px; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .lb-backdrop, .lb-btn{ transition: none !important; }
+}
+
+
+/* === Brand logo styling === */
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-md, 24px);
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-logo {
+  max-width: 160px;     /* adjust size as you like */
+  height: auto;
+  display: block;
+}
+
+/* Optional: make logo shrink slightly on mobile */
+@media (max-width: 600px) {
+  .brand-logo {
+    max-width: 130px;
+  }
+}
+
+
+/* === Fixed Menu Button === */
+/* refined hamburger-only menu button */
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  justify-content: center;
+  font-size: 1.3rem;        /* size of the ☰ icon */
+  line-height: 1;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow .15s ease, transform .1s ease, background .15s ease;
+}
+
+.menu-toggle:hover {
+  box-shadow: 0 6px 22px rgba(0,0,0,.08);
+  transform: translateY(-1px);
+  background: #f9f9f9;
+}
+
+.menu-toggle__icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Keep page below button */
+.wrapper{ padding-top: 70px; }
+
+/* === Blur overlay (no dim) — lives BELOW the panel === */
+html.menu-open::before{
+  content:"";
+  position: fixed; inset: 0;
+  background: rgba(255,255,255,0.01); /* minimal, just to trigger backdrop-filter */
+  /*z-index: 1000;         /* BELOW panel (1100) and button (1200) */
+  pointer-events: none;  /* clicks pass through */
+}
+html:not(.menu-open)::before{ opacity: 0; }
+
+/* === Side Drawer Panel (LEFT) === */
+.menu-panel{
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: min(86vw, 320px);
+  z-index: 1100;           /* above blur, below button */
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+  border-right: 1px solid rgba(0,0,0,.06);
+  overflow: auto;
+
+  /* start hidden, slide in/out */
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform .28s ease, opacity .2s ease;
+}
+
+/* Open state (JS toggles .is-open + [hidden]) */
+.menu-panel.is-open{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Inner padding & spacing for content inside the drawer */
+.menu-panel .brand{ padding: 18px 16px 8px; margin: 0; }
+.menu-panel .custom-nav{ padding: 10px 16px 20px; margin: 0; border-top: 1px solid rgba(0,0,0,.06); }
+.menu-panel .items a{ display:block; padding: 6px 0; }
+
+
+/* Tidy: don’t keep old “collapsible max-height” transitions */
+.menu-panel,
+.menu-panel.is-open{
+  max-height: none !important;
+}
+
+/* Small screens nudges */
+@media (max-width: 480px){
+  .menu-toggle{ top: 10px; left: 10px; padding: 7px 12px; }
+  .wrapper{ padding-top: 60px; }
+}
+
+/* --- Keep logo clear of the fixed Menu button --- */
+.menu-panel .brand {
+  padding-top: 70px;   /* pushes logo below the floating button */
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 480px) {
+  .menu-panel .brand {
+    padding-top: 60px; /* a bit tighter on small screens */
+  }
 }
