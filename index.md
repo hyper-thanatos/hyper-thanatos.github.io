@@ -26,11 +26,11 @@ title: Digital Marketing Strategy
 <img src="/assets/images/work3.jpg" alt="Draft 3" data-lightbox data-lb-group="work">
 -->
 
-<h3>Your online presence</h3>
-<p>is your audience's first or second impression of you, it's your unique voice and the version of the world you have created.</p>
+<h3>Your online presence matters, a lot.</h3>
+<p>It is your audience's first or second impression of you, your unique voice and the digital version of the world you create.</p>
 <h3>Your online voice defines you.</h3>
-<p>Your website, your socials, your copy and your image, all make up your unique online ambassador. Your ambassador is the most truthful representative of your project, your organisation, your singular or plural self behind it all.</p>
-<p>Find out how your online ambassador can be your most passionate advocate.</p>
+<p>Your website, your socials, your copy and your image, all make up your unique online voice. Your online voice is your ambassador, the most truthful representative of your project, your organisation, your community and your team behind it all.</p>
+<p>Find out how your online presence can be your most passionate advocate.</p>
 <h3 style="">
   <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Get in touch</a>
   </h3>
