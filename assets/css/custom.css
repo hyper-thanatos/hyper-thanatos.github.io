@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Content niceties */
-.blurb { font-size:revert; }
+.blurb { font-size:revert; text-align: center;}
 /* === CTA Buttons / Links === */
 .cta {
   display: inline-block;
@@ -594,7 +594,7 @@ img[loading="lazy"]{
 }
 
 .brand-logo {
-  max-width: 160px;     /* adjust size as you like */
+  max-width: 70px;     /* adjust size as you like */
   height: auto;
   display: block;
 }
