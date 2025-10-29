@@ -123,8 +123,6 @@ a:not(.cta):hover {
   padding: var(--space-lg) var(--space-md) calc(var(--space-xl) + 20px);
   box-sizing: border-box;
 
-  /* add breathing room below fixed menu button */
-  padding-top: 70px;
 }
 
 /* Header (menu button area + logo) */
@@ -162,6 +160,9 @@ a:not(.cta):hover {
   .wrapper {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
+
+      /* add breathing room below fixed menu button */
+      padding-top: 70px;
   }
 }
 
