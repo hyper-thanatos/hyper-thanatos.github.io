@@ -24,7 +24,7 @@ title: Digital Marketing Strategy
 
   <!-- CTA for block 1 -->
   <div class="cta-group">
-    <a class="cta cta--accent" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">What message do your online assets communicate?</a>
+    <a class="cta cta--accent" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">What is the message you communicate online?</a>
   </div>
 <!-- Optional third blob -->
   <i class="blob-extra" aria-hidden="true"></i>
@@ -80,9 +80,10 @@ title: Digital Marketing Strategy
   <div class="text-block measure  blobbed blob--lg blob-overlap style-brick ivory"><p class="blob-extra" aria-hidden="true"
 
   style="--blob3-w:280px; --blob3-h:200px; --blob3-left:65%; --blob3-top:-30px;">
-  <h3>Together with your team</h3>
-  <p>we can tailor your online presence to fit your mission's narrative
-  and leverage the force of AI to your benefit. Interested?</p>></p>
+  <h3>Together we can set your goals.</h3>
+  <p>We can tailor your online presence to fit your mission's narrative
+  and leverage the force of AI to your benefit. Are you interested?</p>
+  </p>
 
   <div class="cta-group">
     <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Book a free consultation.</a>
