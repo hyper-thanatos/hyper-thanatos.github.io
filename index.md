@@ -24,7 +24,7 @@ title: Digital Marketing Strategy
 
   <!-- CTA for block 1 -->
   <div class="cta-group">
-    <a class="cta cta--accent" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">What is the message you communicate online?</a>
+    <a class="cta cta--accent" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">What message do you communicate online?</a>
   </div>
 <!-- Optional third blob -->
   <i class="blob-extra" aria-hidden="true"></i>
