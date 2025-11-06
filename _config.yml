@@ -4,10 +4,13 @@ plugins:
 
 ruby gem "github-pages", group: :jekyll_plugins
 
-title: hyper thanatos
+title: Neophron Residence Athens
 logo: /assets/img/logo.png
-description: Athanasios Anagnostopoulos is a writer, print and digital publishing editor and digital marketing specialist.
+description: "Modern living spaces in the heart of Athens."
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
 include: ["assets"]
+
+url: "https://hyper-thanatos.github.io"
+baseurl: "/neophron-residence-athens"
