@@ -13,4 +13,4 @@ theme: jekyll-theme-minimal
 include: ["assets"]
 
 url: "https://hyper-thanatos.github.io"
-baseurl: "/neophron-residence-athens"
+baseurl: ""
