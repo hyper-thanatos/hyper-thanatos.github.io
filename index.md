@@ -82,13 +82,12 @@ title: Digital Marketing Strategy
       </div>
 
       <div class="cta-group">
-        <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Let's set your KPIs.</a>
+        <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Let's set your KPIs</a>
       </div>
 
 
-  <div class="text-block measure  blobbed blob--lg blob-overlap style-brick ivory"><p class="blob-extra" aria-hidden="true"
-
-  style="--blob3-w:280px; --blob3-h:200px; --blob3-left:65%; --blob3-top:-30px;">
+  <div class="text-block measure  blobbed blob--lg blob-overlap style-brick ivory">
+    <p class="blob-extra" aria-hidden="true" style="--blob3-w:280px; --blob3-h:200px; --blob3-left:65%; --blob3-top:-30px;">
   <h3>Together we can define your goals.</h3>
   <p>We can tailor your online presence to fit your mission's narrative
   and leverage the force of AI to your benefit. Are you interested?</p>
