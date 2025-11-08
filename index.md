@@ -20,7 +20,7 @@ title: Digital Marketing Strategy
 
 
 <!-- Block 1 -->
-<section class="text-block measure  blobbed style-brick ivory bleed-host">
+<section class="text-block measure  blobbed style-brick ivory">
   <h3>Your online presence matters, a lot.</h3>
   <p>Your unique online presence is the digital aspect of the world you create.</p>
 
@@ -31,10 +31,7 @@ title: Digital Marketing Strategy
 <!-- Optional third blob -->
   <i class="blob-extra" aria-hidden="true"></i>
   <i class="screen screen--grey-1"
-   style="--screen-w:420px; --screen-h:260px; --screen-top:-30px; --screen-left:-60px;"></i>
-
-<i class="screen screen--grey-2"
-   style="--screen-w:280px; --screen-h:180px; --screen-top:120px; --screen-left:55%;"></i>
+   style="--screen-w:220px; --screen-h:390px; --screen-top:-30px; --screen-left:-40px;"></i>
 
 </section>
 
@@ -52,14 +49,14 @@ title: Digital Marketing Strategy
   <div class="cta-group">
     <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">How do you reach out to your audience?</a>
   </div>
-  <hr class="hr-shadow">
 </section>
 
 <!-- Intro blurb -->
-<div class="measure blobbed blob--sm blob-center style-brick ivory">
+<div class="measure blobbed blob--sm style-brick ivory">
   <div class="blurb">
     <h3>Find out how your online assets can be your most passionate advocates.</h3>
   </div>
+
 
   <!-- CTA under the blurb -->
   <div class="cta-group">
@@ -115,6 +112,8 @@ title: Digital Marketing Strategy
   <p>can amplify your unique message or mute your voice behind a screen of sameness. Correct use of AI tools brings brilliant results.
      SEO (Search Engine Optimization) and GEO (Generative Engine Optimization)
      are the most cost-effective steps towards a snowball effect on your online visibility and performance.</p>
+     <i class="screen screen--grey-3 screen--glass"
+        style="--screen-w:360px; --screen-h:220px; --screen-top:-70px; --screen-left:68%;"></i>
 </section>
 
   <section class="strategy-focus">
@@ -150,7 +149,7 @@ title: Digital Marketing Strategy
 
 </section>
 
-  <section class="text-block measure blobbed blob--md blob-right blob-overlap style-frost bleed-host">
+  <section class="text-block measure blobbed blob--sm blob-right blob-overlap style-frost bleed-host">
     <div class="blurb">
       <h4>Are you looking to determine your goals and KPIs?</h4>
       </div>
@@ -159,7 +158,7 @@ title: Digital Marketing Strategy
         <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Let's set your KPIs</a>
       </div>
       <i class="screen screen--grey-3 screen--glass"
-         style="--screen-w:360px; --screen-h:220px; --screen-top:-70px; --screen-left:68%; --screen-t:rotate(4deg);"></i>
+         style="--screen-w:360px; --screen-h:220px; --screen-top:-70px; --screen-left:68%;"></i>
 <hr class="hr-shadow">
 
 
@@ -173,6 +172,7 @@ title: Digital Marketing Strategy
   <div class="cta-group">
     <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Book a free consultation.</a>
   </div>
+  <hr class="hr-shadow">
   </div>
 </section>
 
