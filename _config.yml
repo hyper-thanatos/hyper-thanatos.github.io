@@ -4,9 +4,9 @@ plugins:
 
 ruby gem "github-pages", group: :jekyll_plugins
 
-title: Neophron Residence Athens
+title: Digital Marketing Strategy SEO GEO
 logo: /assets/img/logo.png
-description: "Modern living spaces in the heart of Athens."
+description: Digital Marketing Strategy Consultancy
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal

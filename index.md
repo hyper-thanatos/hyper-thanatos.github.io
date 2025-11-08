@@ -10,11 +10,11 @@ title: Digital Marketing Strategy
 <div class="measure">
   <h1 class="blurb">athanasios.co</h1>
   <p class="blurb">
-    is a consultancy for <u>digital/print publishing</u>,
-    <u>online marketing strategy</u>,
-    <u>Search Engine Optimisation (SEO)</u> and
-    <u>Generative Engine Optimisation (GEO)</u>.
-  </p>
+    <small><u>Digital & Print Publishing</u>,
+    <u>Online Marketing Strategy</u>,
+    <u>Search Engine Optimisation (SEO)</u>
+    <u>Generative Engine Optimisation (GEO)</u>
+  </small></p>
 </div>
 
 <!-- Block 1 -->
@@ -61,10 +61,19 @@ title: Digital Marketing Strategy
 <!-- Block 3 -->
 <section class="text-block text-block--mini text-block--left measure">
   <h3>AI tools and SEO</h3>
-  <p>can amplify your unique message or mute it under a pile of sameness. Correct use brings brilliant results. SEO (Search Engine Optimization) and GEO (Generative Engine Optimization) are the most cost-effective steps towards a snowball effect on your online visibility and performance.</p>
-  <h4>Points of focus are:</h4>
-  <p>Discoverability (crawling), Relevance (indexing, topics, keywords), Authority (backlinking, content), Originality (unique message), Discursiveness (narrative).</p>
-  <p>Traffic, leads & conversions, UX (user experience) and accessibility are among the most important goals online.</p>
+  <p>can amplify your unique message or mute it under a pile of sameness. Correct use brings brilliant results.
+     SEO (Search Engine Optimization) and GEO (Generative Engine Optimization)
+     are the most cost-effective steps towards a snowball effect on your online visibility and performance.</p>
+     <h4>Points of focus:</h4>
+   <ul>
+     <li>Discoverability (crawling)</li>
+     <li>Relevance (indexing, topics, keywords)</li>
+     <li>Authority (backlinking, content)</li>
+     <li>Originality (unique message)</li>
+     <li>Discursiveness (narrative)</li>
+     <li>Traffic, leads & conversions</li>
+     <li>UX (user experience) and accessibility</li>
+   </ul>
 
 
   <section class="text-block measure blobbed blob--md blob-right blob-overlap style-frost">
@@ -80,7 +89,7 @@ title: Digital Marketing Strategy
   <div class="text-block measure  blobbed blob--lg blob-overlap style-brick ivory"><p class="blob-extra" aria-hidden="true"
 
   style="--blob3-w:280px; --blob3-h:200px; --blob3-left:65%; --blob3-top:-30px;">
-  <h3>Together we can set your goals.</h3>
+  <h3>Together we can define your goals.</h3>
   <p>We can tailor your online presence to fit your mission's narrative
   and leverage the force of AI to your benefit. Are you interested?</p>
   </p>
