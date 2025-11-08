@@ -54,7 +54,7 @@ title: Digital Marketing Strategy
 
   <!-- CTA under the blurb -->
   <div class="cta-group">
-    <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Get in touch</a>
+    <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Let's talk strategy</a>
   </div>
 </div>
 
@@ -78,11 +78,11 @@ title: Digital Marketing Strategy
 
   <section class="text-block measure blobbed blob--md blob-right blob-overlap style-frost">
     <div class="blurb">
-      <h4>Are you looking to determine your goals and KPI's?</h4>
+      <h4>Are you looking to determine your goals and KPIs?</h4>
       </div>
 
       <div class="cta-group">
-        <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Let's talk strategy.</a>
+        <a class="cta" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">Let's set your KPIs.</a>
       </div>
 
 
