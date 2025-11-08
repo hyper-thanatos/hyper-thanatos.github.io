@@ -56,7 +56,7 @@ title: Digital Marketing Strategy
 </section>
 
 <!-- Intro blurb -->
-<div class="measure blobbed blob--sm blob-center blob-overlap style-brick ivory">
+<div class="measure blobbed blob--sm blob-center style-brick ivory">
   <div class="blurb">
     <h3>Find out how your online assets can be your most passionate advocates.</h3>
   </div>
@@ -112,7 +112,7 @@ title: Digital Marketing Strategy
 <section class="text-block measure blobbed blob--md blob-right">
 
   <h3>AI tools and SEO</h3>
-  <p>can amplify your unique message or mute it under a pile of sameness. Correct use brings brilliant results.
+  <p>can amplify your unique message or mute your voice behind a screen of sameness. Correct use of AI tools brings brilliant results.
      SEO (Search Engine Optimization) and GEO (Generative Engine Optimization)
      are the most cost-effective steps towards a snowball effect on your online visibility and performance.</p>
 </section>
