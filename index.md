@@ -20,7 +20,7 @@ title: Digital Marketing Strategy
 
 
 <!-- Block 1 -->
-<section class="text-block measure  blobbed style-brick ivory">
+<section class="text-block measure blob--sm blobbed style-brick ivory">
   <h3>Your online presence matters, a lot.</h3>
   <p>Your unique online presence is the digital aspect of the world you create.</p>
 
@@ -29,9 +29,9 @@ title: Digital Marketing Strategy
     <a class="cta cta--accent" href="mailto:oaao213@gmail.com" target="_blank" rel="noopener">What message do you communicate online?</a>
   </div>
 <!-- Optional third blob -->
-  <i class="blob-extra" aria-hidden="true"></i>
+<!--  <i class="blob-extra" aria-hidden="true"></i>
   <i class="screen screen--grey-1"
-   style="--screen-w:220px; --screen-h:390px; --screen-top:-30px; --screen-left:-40px;"></i>
+   style="--screen-w:220px; --screen-h:390px; --screen-top:-30px; --screen-left:-40px;"></i>-->
 
 </section>
 
