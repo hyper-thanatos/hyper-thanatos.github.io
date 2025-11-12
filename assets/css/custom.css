@@ -877,15 +877,27 @@ body::before {
 
 /* Desktop only: full-bleed */
 @media (min-width: 721px){
+  .features{ width: 100vw; }
+}
+
+@media (min-width: 721px){
   .features{
     position: relative;
     left: 50%;
-    right: 50%;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    width: 100vw;
-    padding-inline: 0;
+    transform: translateX(-50%);
+    width: 115%;
+    max-width: 1200px;
+    padding-inline: var(--space-lg);
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(3px) saturate(1.1);
+    border-radius: 12px;
   }
+
+  .features {
+    margin-top: calc(var(--space-xl) + 6rem);
+    margin-bottom: var(--space-xxl);
+  }
+
 }
 
 /* Mobile: keep inside the measure */
