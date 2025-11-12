@@ -370,7 +370,7 @@ ul, ol {
   font-size: 1rem;
   color: var(--color-text);
   text-decoration: none;
-  border: 1px solid var(--color-text);
+  border: 2px solid var(--color-text);
   border-bottom: none;
   border-radius: 999px;
   transition:
@@ -417,8 +417,8 @@ ul, ol {
   box-sizing: border-box;
   max-width: 100%;
   padding: 18px 34px 14px 28px; /* right padding retained here by design */
-  border-top: 1.5px solid var(--color-text);
-  border-right: 1.5px solid var(--color-text);
+  border-top: 3px solid var(--color-text);
+  border-right: 1px solid var(--color-text);
   border-left: none;
   border-bottom: none;
   border-radius: 20px 32px 0 0;
@@ -888,8 +888,9 @@ body::before {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: var(--space-lg);
-  margin-top: calc(var(--space-xl) + 6rem);
+  gap: var(--space-xl);
+  margin-top: calc(var(--space-xxl) + 6rem);
+  margin-bottom: var(--space-xxl);
   margin-block: var(--section-xxl);
   box-sizing: border-box;
 }
@@ -917,39 +918,35 @@ body::before {
 
 /* Mobile: keep inside the measure */
 @media (max-width: 720px){
-  .features{ width: auto; margin-inline: auto; padding-inline: var(--space-sm); }
+  .features{ width: auto; margin-inline: auto; padding-inline: 0; }
 }
 
 .features .icon-wrap{
-  flex: 0 0 280px;   /* fixed card width */
-  max-width: 280px;
-  text-align: center;
-  margin: 0 var(--space-sm);
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    flex: 0 0 220px;
+    max-width: 220px;
+  }
 
 .heroicon--globe {
   width: 150px;
   height: 150px;
   opacity: 0.85;
   position: relative;
-  transform: translateY(-50px);
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.25rem;
+  transform: none;
+  margin: var(--space-xs) auto;
 }
 
 .heroicon--globe:hover {
-  transform: translateY(-50px) scale(1.1); /* combine both */
+  transform: translateY(-10px) scale(1.1); /* combine both */
   opacity: 0.8;
 }
 
 
-/* Optionally nudge the label slightly upward for tighter visual grouping */
 .strategy-label {
-  margin-top: 0;
-  line-height: 1.2;
+  margin-top: 0.25rem;
 }
 
 .features .icon-wrap .strategy-label,
@@ -961,13 +958,7 @@ body::before {
   overflow-wrap: anywhere;   /* wrap long words/URLs if needed */
 }
 
-@media (max-width: 640px){
-  .features .icon-wrap{
-    flex: 0 0 220px;
-    max-width: 220px;
-  }
-  .heroicon--globe{ width: 120px; height: 120px; }
-}
+
 
 /* --- Layout pairing: Strategic Growth + Points of Focus --- */
 .strategy-focus {
