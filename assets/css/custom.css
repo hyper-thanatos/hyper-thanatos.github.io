@@ -51,6 +51,9 @@
      --screen-black-3: rgba(0,0,0,0.36);
    }
 
+   html, body { overflow-x: hidden; }
+
+
    /* Paper & links (consolidated) */
    html,body{ background: var(--paper-bg); color: var(--ink); }
    a{ color: var(--accent); text-decoration:none; transition: color .2s ease; }
@@ -692,6 +695,14 @@ img[loading="lazy"]{ filter: blur(0.001px); } /* Safari decode nudge */
 
 /* Fixed Menu Button */
 .menu-toggle {
+
+  position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 1200;
+    transform: translateZ(0);
+    will-change: transform;
+    -webkit-tap-highlight-color: transparent;
   width: 44px; height: 44px; padding: 0;
   display: inline-flex; align-items: center; justify-content: center;
   font-size: 1.3rem; line-height: 1;
@@ -701,6 +712,7 @@ img[loading="lazy"]{ filter: blur(0.001px); } /* Safari decode nudge */
   cursor: pointer;
   transition: box-shadow .15s ease, transform .1s ease, background .15s ease;
 }
+.menu-toggle:active { transform: none; }
 .menu-toggle:hover { box-shadow: 0 6px 22px rgba(0,0,0,.08); transform: translateY(-1px); background: #f9f9f9; }
 .menu-toggle__icon { font-size: 1.4rem; line-height: 1; pointer-events: none; }
 
@@ -853,24 +865,39 @@ body::before {
 
 /* Full-bleed container aligned to the page center */
 .features{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(100vw, 100%);
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--space-lg);
   align-items: flex-start;
+  gap: var(--space-lg);
   margin-top: calc(var(--space-xl) + 4rem);
   margin-block: var(--section-gap);
+  box-sizing: border-box;
+}
+
+/* Desktop only: full-bleed */
+@media (min-width: 721px){
+  .features{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    padding-inline: 0;
+  }
+}
+
+/* Mobile: keep inside the measure */
+@media (max-width: 720px){
+  .features{ width: auto; margin-inline: auto; padding-inline: var(--space-sm); }
 }
 
 .features .icon-wrap{
   flex: 0 0 280px;   /* fixed card width */
   max-width: 280px;
   text-align: center;
+  margin: 0 var(--space-sm);
 }
 
 .heroicon--globe {
@@ -908,7 +935,10 @@ body::before {
 }
 
 @media (max-width: 640px){
-  .features .icon-wrap{ flex: 0 0 220px; max-width: 220px; }
+  .features .icon-wrap{
+    flex: 0 0 220px;
+    max-width: 220px;
+  }
   .heroicon--globe{ width: 120px; height: 120px; }
 }
 

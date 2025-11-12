@@ -109,9 +109,9 @@ title: Digital Marketing Strategy
 <section class="text-block measure blobbed blob--md blob-right">
 
   <h3>AI tools and SEO</h3>
-  <p>can amplify your unique message or mute your voice behind a screen of sameness. Correct use of AI tools brings brilliant results.
-     SEO (Search Engine Optimization) and GEO (Generative Engine Optimization)
-     are the most cost-effective steps towards a snowball effect on your online visibility and performance.</p>
+  <p>AI and SEO can both amplify your unique message or mute your voice behind a screen of sameness. Correct use of AI tools brings brilliant results.</p>
+     <p><strong>SEO (Search Engine Optimization)</strong> and <strong>GEO (Generative Engine Optimization)</strong> combined
+     are the most <strong>cost-effective</strong> steps towards achieving a snowball effect on your online <strong>visibility</strong> and <strong>performance</strong>.</p>
      <i class="screen screen--grey-3 screen--glass"
         style="--screen-w:360px; --screen-h:220px; --screen-top:-70px; --screen-left:68%;"></i>
 </section>
