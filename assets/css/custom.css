@@ -157,6 +157,25 @@ a:not(.cta):hover {
   }
 }
 
+
+ul, ol {
+  padding-left: 1.25em;
+}
+
+/* === Mobile refinement: remove bullets and center text === */
+@media (max-width: 720px) {
+  ul, ol {
+    list-style: none;      /* hides bullets or numbers */
+    padding-left: 0;       /* removes the indent */
+    text-align: center;    /* centers text with the rest of the layout */
+  }
+
+  ul li, ol li {
+    margin-bottom: 0.5em;  /* keeps a little breathing space between items */
+  }
+}
+
+
 /* =========================
    LAYOUT
    ========================= */
@@ -870,10 +889,11 @@ body::before {
   justify-content: center;
   align-items: flex-start;
   gap: var(--space-lg);
-  margin-top: calc(var(--space-xl) + 4rem);
-  margin-block: var(--section-gap);
+  margin-top: calc(var(--space-xl) + 6rem);
+  margin-block: var(--section-xxl);
   box-sizing: border-box;
 }
+
 
 /* Desktop only: full-bleed */
 @media (min-width: 721px){
@@ -891,11 +911,6 @@ body::before {
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(3px) saturate(1.1);
     border-radius: 12px;
-  }
-
-  .features {
-    margin-top: calc(var(--space-xl) + 6rem);
-    margin-bottom: var(--space-xxl);
   }
 
 }
